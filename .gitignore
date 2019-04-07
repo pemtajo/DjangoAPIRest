@@ -1,0 +1,6 @@
+
+*.pyc
+
+core/__pycache__/
+
+pizzeria/__pycache__/
