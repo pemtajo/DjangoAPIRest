@@ -4,7 +4,7 @@ from .models import PizzaOrder, Size, Flavor, Adicional
 class PizzaOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = PizzaOrder
-        fields = ('size', 'flavor', 'adicionals')
+        fields = ['size', 'flavor', 'adicionals', 'totalPrice', 'prepationTime']
     
 class SizeSerializer(serializers.ModelSerializer):
     class Meta:
