@@ -4,3 +4,7 @@
 core/__pycache__/
 
 pizzeria/__pycache__/
+
+core/migrations/
+
+db\.sqlite3
