@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime, date
 import operator
+from decimal import Decimal
 
 # Create your models here.
 class Size(models.Model):
@@ -46,14 +47,14 @@ class PizzaOrder(models.Model):
    
     @property
     def totalPrice(self):
-        return self.size.price + sum([x.addPrice for x in self.adicionals.all()])
+        return Decimal(self.size.price) + Decimal(sum([x.addPrice for x in self.adicionals.all()]))
 
     @property
     def prepationTime(self):
         return self.size.prepationTime+self.flavor.addPrepationTime+sum([x.addPrepationTime for x in self.adicionals.all()])
 
     def __str__(self):
-        return self.size + " " + self.flavor
+        return str(self.size) + " " + str(self.flavor)
 
 
 
