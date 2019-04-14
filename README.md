@@ -1,5 +1,5 @@
 # pizzeria
-A simple API REST with django
+A simple API REST with django for a pizzeria
 
 
 # Dependences
