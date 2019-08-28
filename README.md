@@ -3,13 +3,17 @@ A simple API REST with django for a pizzeria
 
 
 # Dependences
-run install_dependences.sh
+build docker (for example)
 
-After run config.sh
+    docker build -t django_back  DjangoAPIRest/
 
-When the django is open
+Run docker (for example)
 
-run value_defaults.sh
+    docker run -p 8000:8000 django_back
+
+After that run some values default for data
+
+    ./value_defaults.sh
 
 To test in postman
 
