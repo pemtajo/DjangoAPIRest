@@ -17,4 +17,4 @@ After that run some values default for data
 
 To test in postman
 
-![alt text](https://github.com/pemtajo/pizzeria/blob/master/postman.png)
+![alt text](https://github.com/pemtajo/FullAPIRest/blob/master/backend/postman.png)
